@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Lock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="black" onclick="goFullscreen()">
+
+<h2>🔐 Enter PIN</h2>
+
+<input type="password" id="pin" readonly>
+<button onclick="togglePass()">👁️</button>
+
+<div class="keypad">
+  <button onclick="add(1)">1</button>
+  <button onclick="add(2)">2</button>
+  <button onclick="add(3)">3</button>
+  <button onclick="add(4)">4</button>
+  <button onclick="add(5)">5</button>
+  <button onclick="add(6)">6</button>
+  <button onclick="add(7)">7</button>
+  <button onclick="add(8)">8</button>
+  <button onclick="add(9)">9</button>
+  <button onclick="clearPin()">⌫</button>
+  <button onclick="add(0)">0</button>
+  <button onclick="login()">✔</button>
+</div>
+
+<p id="msg"></p>
+
+<a href="pattern.html">🔵 Pattern Lock</a><br>
+<a href="face.html">🧠 Face ID</a>
+
+<script src="lock.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+body.black {
+  background: #000;
+  color: #0f0;
+  font-family: Arial;
+  text-align: center;
+}
+
+input {
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  border: none;
+}
+
+canvas {
+  background: #111;
+  margin-top: 20px;
+}
+
+.scan-line {
+  height: 5px;
+  background: cyan;
+  animation: scan 2s infinite;
+}
+
+@keyframes scan {
+  0% { margin-top: 0; }
+  100% { margin-top: 200px; }
+}
+
+.glow {
+  animation: glow 1s infinite;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px lime; }
+  50% { box-shadow: 0 0 25px lime; }
+  100% { box-shadow: 0 0 5px lime; }
+}
